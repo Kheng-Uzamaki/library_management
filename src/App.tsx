@@ -5,6 +5,7 @@ import Footer from "./Layouts/NavbarAndFooter/Footer";
 import HomePage from "./Layouts/HomePage/HomePage";
 import SearchBookPage from "./Layouts/SearchBookPage/SearchBookPage";
 import { Redirect, Route, Switch } from "react-router-dom";
+import BookCheckoutPage from "./Layouts/BookCheckoutPage/BookCheckoutPage";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
 
         <Route path="/search">
           <SearchBookPage />
+        </Route>
+        <Route path="/checkout/:bookId">
+          <BookCheckoutPage />
         </Route>
       </Switch>
       </div>
